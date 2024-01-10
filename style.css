@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    background-color: white;
+ 
 }
 
 .navbar__brand{
@@ -59,12 +59,84 @@ body{
     margin: 20px 0;
     color: #1d3557;
 }
+.resturent__image{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+     margin-top: 20px;
+
+}
+
+.email__form__des{
+    display: flex;
+    justify-content: space-between;  
+}
+.email__form{
+   
+   background-color: #ff512f;
+   color: #ff512f;
+   border-radius: 8px;
+}
+.email__button{
+    display: flex;
+    justify-content: flex-end;
+   
+    margin-top: -30px;
+}
+.email__container
+{
+    width: 100%;
+}
+.email__button__gradient
+{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    
+}
+.email__button__gradient:hover{
+    border: 2px solid #ff6767;
+     cursor: pointer;
+ }
+.resturent__img__container{
+    width: 100%
+    
+}
+.resturent__description
+{
+    padding: 15px;
+}
+.resturent__text{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #1d3557;
+    text-align: start;
+}
+
 .container{
     padding: 20px;  
     max-width: 100%;
     margin: 0 auto;
 }
-
+.email__text{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #1d3557;
+    text-align: start;
+    width: 100%;
+    padding-right: 50px;
+    margin-right: 50px;
+}
 .food__card__description
 {
     padding: 15px;
@@ -75,7 +147,6 @@ body{
 .food__card__image
 {
     width: 100%;
-   
 }
 
 .food__image{
@@ -92,6 +163,56 @@ body{
     font-weight: 800;
     color: #1d3557;
 }
+.last__section
+{
+    width: 100%;
+}
+.last__section__img
+{
+    width: 100%;
+    border-radius: 8px 8px 0 0 ;
+    opacity: 80%;
+}
+.last__section__des
+{
+    width: 100px;
+}
+.last__section__text{
+     font-size: 18px;
+     color: white;
+     position: absolute;
+     top: 2550px;
+     left: 20px;
+     padding:  0 16px;
+}
+.footer__container
+{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+   
+}
+.footer__logo
+{
+    width: 300px;
+}
+.footer__logo__img
+{
+    width: 100%;
+}
+.footer__des
+{
+    display: flex;
+    justify-content: space-around;
+}
 @media (min-width:768px)
 {
     .navbar{
@@ -105,7 +226,12 @@ body{
         margin-top: 20px;
         gap: 50px;
     }
-    
+    .resturent__container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 15px;
+    }
     .explore__menu__lists
     {
         display: flex;
@@ -120,7 +246,7 @@ body{
    
     .explore__menu__gradient
     {
-        position: absolute;
+        position: absolute;  
         width: 100%;
         height: 100%;
         top: 0;
@@ -139,6 +265,63 @@ body{
         position: relative;
         
     }
+    .email__text{
+        font-size: 32px;
+    }
+    .resturent__text
+    {
+        font-size: 30px;
+    }
+    .resturent__img__container
+    {
+        padding-left: 100px;
+    }
+    .resturent__container
+    {
+        margin: 28px;
+    }
+   .email__text
+   {
+    text-align: center;
+   }
+   .email__form__des
+   {
+    display: flex;
+    justify-content: space-around;
+   }
+   .email__button
+   {
+    display: flex;
+    justify-content: space-around; 
+    margin-left:280px ;
+   }
+   .last__section__text
+   {
+     font-size: 30px;
+     position: absolute;
+     top: 1700px;
+     left: 50px;
+     padding:  0 16px;
+   }
+   .last__section__img
+   {
+    height: 300px;
+   }
+   .footer__logo
+   {
+    height: 40px;
+   }
+   .footer__logo__img
+   {
+    margin-left: 100px;
+   }
+   .footer__des
+   {
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+   }
+   
 }
 @media (min-width:1024px)
 {
@@ -175,5 +358,55 @@ body{
     {
         font-size: 48px;
     }
+    .resturent__text
+    {
+        text-align: left;
+        font-size: 34px;
+    }
+    .resturent__container
+    {
+        width: 700px;
+        padding-left: 100px;
+    }
+    .last__section
+    {
+        width: 1000px;
+        border-radius: 0 0 8px 8px ;
+    }
     
+    .last__section__img
+    {
+        opacity: 80%;
+    }
+    .last__section__text
+   {
+     font-size: 28px;
+     position: absolute;
+     top: 1800px;
+     left: 50px;
+     margin-left: 200px;
+   }
+   .last__section__des
+   {
+    width: 50px;
+   }
+   .last__section__container
+   {
+    width: 30%;
+   }
+   .footer__logo
+   {
+    height: 40px;
+   }
+   .footer__logo__img
+   {
+    margin-left: 200px;
+   }
+   .footer__des
+   {
+    display: flex;
+    justify-content: end;
+    margin-right: 300px;
+   }
+   
 }
